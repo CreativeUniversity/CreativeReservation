@@ -1,0 +1,32 @@
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+        <a class="navbar-brand" class="pull-left" href="#" style="padding-top: 0px;">
+            <img class="img-responsive" src="../assets/images/cl.png" style="width: 48px; height: 50px; float: left;">
+        </a>
+        <a class="navbar-brand" class="pull-left" href="#" >
+            Creative Reservation
+        </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="GeneralDemandsUI.html"> Demands</a></li>
+        <li><a href="../../backend/Common/logOut.php"> Log Out <span id="fullnameConnected"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <script>
+
+        $.get("../../backend/Common/getUserConnected.php",function( data ) {
+            $("#fullnameConnected").html('( '+data.fullname+' )');
+        });
+
+    </script>

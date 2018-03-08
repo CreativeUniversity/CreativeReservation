@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Details</title>
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/cosmo.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+    <style>
+        body{
+            background-color: #f6f6f6;
+        }
+    </style>
+</head>
+<body>   
+<div id="menu-content"></div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h2>Details</h2>
+                <div class="table-responsive">          
+                        <table class="table table-hover">
+                           <tbody>
+    
+                               <tr class="table-light">
+                                    <th scope="row">Id</th>
+                                    <td id="Did"></td>
+                                </tr>
+                               <tr class="table-light">
+                                    <th scope="row">Demand Title</th>
+                                        <td id="Dtitle"></td>
+                                </tr>
+                               <tr class="table-light">
+                                    <th scope="row">Demand Request Date</th>
+                                        <td id="Ddate"></td>
+                                </tr>
+                               <tr class="table-light">
+                                    <th scope="row">Description</th>
+                                        <td id="Ddescription"></td>
+                                </tr>
+                               <tr class="table-light">
+                                    <th scope="row">Event Start Date</th>
+                                        <td id="Dstartdate"></td>
+                                </tr>
+                               <tr class="table-light">
+                                    <th scope="row">Event End Date</th>
+                                        <td id="Denddate"></td>
+                                </tr>
+                               
+                               <tr class="table-light">
+                                    <th scope="row">Requierments</th>
+                                        <td id="Drequirements"></td>
+                                </tr>
+                               <tr class="table-light">
+                                    <th scope="row">Attachement file</th>
+                                        <td id="Dfile"></td>
+                                </tr>
+                               <tr class="table-light">
+                                    <th scope="row">Status</th>
+                                        <td id="Dstatus"></td>
+                                </tr>
+                               <tr class="table-light">
+                                    <th scope="row">Refuse causes</th>
+                                        <td id="Dcauses"></td>
+                                </tr>
+                                                        
+                         </tbody>    
+                    </table>
+                </div>
+            </div>
+        </div>    
+    </div>
+               
+    
+    
+
+    
+<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+<script type="text/javascript"src="../assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript"src="../assets/js/Details.js"></script>
+
+    <script>
+    $(function(){
+      $("#menu-content").load("Menus/AdminMenu.html"); 
+    });
+    </script>
+
+    
+    
+</body>
+</html>

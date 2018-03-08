@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SubscribeUI</title>
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/cosmo.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+    <style>
+        body{
+            background-color: #f6f6f6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3" style="margin-top: 45vh; transform: translateY(-50%);">
+            <h1>Creative Reservation - Subscribe</h1>
+            <hr>
+            <form method="post" id="form">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="Fullname" name="fullname" required placeholder="Full name" autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="login" name="login" required placeholder="Login" autocomplete="off">
+                </div>
+
+                <div class="form-group" id="group-password">
+                    <input type="password" class="form-control" id="pwd" name="pwd" required placeholder="Password" autocomplete="off">
+                </div>
+
+                <div class="form-group" id="group-cpassword">
+                    <input type="password" class="form-control" id="cpwd" name="cpwd" required placeholder="Password Confirmation" autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <input type="email" class="form-control " id="email" name="mail" required placeholder="E-mail" autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <input type="tel" class="form-control" id="phonenumber" name="phone" required placeholder="Phone Number" autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <select class="form-control" id="sel1" name="represant">
+                        <option value="CreativeLab">Creative Lab</option>
+                        <option value="Enactus">Enactus</option>
+                        <option value="UGTE">UGTE</option>
+                        <option value="FreeWays">FreeWays</option>
+                        <option value="Securinets">Securinets</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary  btn-block" id="btn-subscribe">Subscribe</button>
+            </form>
+            <div> <p>If you have an account please <a href="connectionUI.html">Sign Up</a> </p></div>
+            <div class="alert alert-danger" id="error-message" style="display: none ; margin-top: 5px;">
+                <strong>User already Exist</strong>
+            </div>
+            <div class="alert alert-success" id="success-message" style="display: none ; margin-top: 5px;">
+                <strong>Successfully registered, waiting for confirmation from the administration.</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../assets/js/subscribe.js"></script>
+
+</body>
+</html>

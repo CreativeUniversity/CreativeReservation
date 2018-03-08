@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demands</title>
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/cosmo.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+    <style>
+        body{
+            background-color: #f6f6f6;
+        }
+    </style>
+</head>
+<body>   
+<div id="menu-content"></div>
+    
+    <div class="container">
+        <div class="page-header">
+            <h1>Demands</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h2>New Demands requests</h2>
+                <div class="table-responsive">          
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#Id</th>
+                                    <th>Demand Title</th>
+                                    <th>Repressant</th>
+                                    <th>Date</th>
+                                    <th>Operations</th>
+                                </tr>
+                            </thead>
+                            <tbody id="notAnsweredDemands">
+                                
+                            </tbody>
+                        </table>
+                </div>
+                <h2>Demands answered</h2>
+                <div class="table-responsive">          
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>#Id</th>
+                                <th>Demand Title</th>
+                                <th>Repressant</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Operations</th>
+                            </tr>
+                            </thead>
+                            <tbody id="answeredDemands">
+                               
+                            </tbody>
+                        </table>
+                </div>
+            </div>    
+        </div>
+        <div class="alert alert-success" id="message" style="display: none ; margin-top: 5px;">
+            <strong id="message-content"></strong>
+        </div>
+    </div>
+               
+    
+    
+
+    
+<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+<script type="text/javascript"src="../assets/js/bootstrap.min.js"></script>
+<script type="text/javascript"src="../assets/js/generalDemands.js"></script>
+    
+    <script>
+    $(function(){
+      $("#menu-content").load("Menus/GeneralMenu.html");
+    });
+    </script>
+
+    
+    
+</body>
+</html>

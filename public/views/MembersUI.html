@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Members</title>
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/cosmo.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+    <style>
+        body{
+            background-color: #f6f6f6;
+        }
+    </style>
+</head>
+<body>   
+<div id="menu-content"></div>
+    
+    <div class="container">
+        <div class="page-header">
+            <h1>Members</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h2>New membership requests</h2>
+                <div class="table-responsive">          
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#Id</th>
+                                    <th>FullName</th>
+                                    <th>Login</th>
+                                    <th>E-mail</th>
+                                    <th>Phone Number</th>
+                                    <th>Represant</th>
+                                    <th>Operations</th>
+                                </tr>
+                            </thead>
+                            <tbody id="passifmember">
+                                
+                            </tbody>
+                        </table>
+                </div>
+                <h2>Members</h2>
+                <div class="table-responsive">          
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#Id</th>
+                                    <th>FullName</th>
+                                    <th>Login</th>
+                                    <th>E-mail</th>
+                                    <th>Phone Number</th>
+                                    <th>Represant</th>
+                                    <th>Operations</th>
+                                </tr>
+                            </thead>
+                            <tbody id="actifmember">
+                               
+                            </tbody>
+                        </table>
+                </div>
+            </div>    
+        </div>
+        <div class="alert alert-success" id="message" style="display: none ; margin-top: 5px;">
+            <strong id="message-content"></strong>
+        </div>
+    </div>
+               
+    
+    
+
+    
+<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+<script type="text/javascript"src="../assets/js/bootstrap.min.js"></script>
+<script type="text/javascript"src="../assets/js/members.js"></script>
+    
+    <script>
+    $(function(){
+      $("#menu-content").load("Menus/AdminMenu.html"); 
+    });
+    </script>
+
+    
+    
+</body>
+</html>
